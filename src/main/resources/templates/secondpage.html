@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Second Page</title>
+</head>
+<body>
+    <h1>List of
+    </h1>
+
+<nav>
+    <a th:href="@{/}">Home Page</a>
+</nav>
+
+<div>
+    <ul th:if="${products != null}"></ul>
+    <li th:each="p : ${products}">
+        <<a th:href="@{/detail/{id}(id=${p.getId()})}"> <span th:text="${p.getName()}"></span></a>
+    </li>
+</div>
+</body>
+</html>

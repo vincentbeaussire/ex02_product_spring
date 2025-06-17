@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Third Page</title>
+</head>
+<body>
+<h1>Contact Details</h1>
+
+<p>Name : <span th:text="${product.getName()}"></span></p>
+<p>Category : <span th:text="${product.getCategory()}"></span></p>
+<p>Price : <span th:text="${product.getPrice()}"></span></p>
+
+<a th:href="@{/list}">Products List</a>
+
+</body>
+</html>
